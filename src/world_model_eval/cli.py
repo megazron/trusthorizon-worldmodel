@@ -136,7 +136,7 @@ def _selftest():
           M.physics_plausibility(unstable, passive_energy=MockTrueModel.energy).value > 0)
     check("the passive true model passes plausibility",
           M.physics_plausibility(ref, passive_energy=MockTrueModel.energy).value == 0)
-    print("world-model-eval selftest %s" % ("PASSED" if ok else "FAILED"))
+    print("trusthorizon-worldmodel selftest %s" % ("PASSED" if ok else "FAILED"))
     return 0 if ok else 1
 
 

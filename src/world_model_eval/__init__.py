@@ -1,4 +1,4 @@
-"""world-model-eval: metrics and a harness to decide whether a learned
+"""trusthorizon-worldmodel: metrics and a harness to decide whether a learned
 simulator's rollout can be trusted, and for how many steps.
 
 This package does not build a world model. It judges one you already have.

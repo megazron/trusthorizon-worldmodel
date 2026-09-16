@@ -1,4 +1,4 @@
-# world-model-eval
+# TrustHorizon
 
 **Can I trust this rollout, and for how many steps?** Metrics and a harness that answer that for a learned simulator, before you plan through it.
 
@@ -26,7 +26,7 @@ Not a world model, and not a trainer. There are no deep-learning dependencies; t
 ## Install
 
 ```
-pip install git+https://github.com/megazron/world-model-eval
+pip install git+https://github.com/megazron/trusthorizon-worldmodel
 ```
 
 NumPy is the only dependency. Clone and use `PYTHONPATH=src` to run from source.
@@ -93,7 +93,7 @@ Implement a `WorldModel` with `reset(state)` and `step(action) -> next_state` (o
 
 ## Origin
 
-Built alongside a set of engineering toolkits extracted from an MSc project, "Multimodal control of a wearable dual-arm robotic system for assisted object manipulation" (Imperial College London, 2026): <https://github.com/megazron/Multimodal-control-of-a-wearable-dual-arm-robotic-system-for-assisted-object-manipulation>. The rule that a number from a simulator is not evidence until the simulator has been checked against ground truth comes straight from that project. See the siblings [sim2real-gap-kit](https://github.com/megazron/sim2real-gap-kit) and [robobench-harness](https://github.com/megazron/robobench-harness).
+Built alongside a set of engineering toolkits extracted from an MSc project, "Multimodal control of a wearable dual-arm robotic system for assisted object manipulation" (Imperial College London, 2026): <https://github.com/megazron/Multimodal-control-of-a-wearable-dual-arm-robotic-system-for-assisted-object-manipulation>. The rule that a number from a simulator is not evidence until the simulator has been checked against ground truth comes straight from that project. See the siblings [shortstop-sim2real](https://github.com/megazron/shortstop-sim2real) and [cleanbench-eval](https://github.com/megazron/cleanbench-eval).
 
 ## Limitations
 

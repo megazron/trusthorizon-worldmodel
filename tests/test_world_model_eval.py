@@ -189,7 +189,7 @@ def test_suite_and_report_round_trip():
     d = json.loads(R.to_json(rep))
     assert d["summary"]["n_scenarios"] == 3
     assert R.to_html(rep).startswith("<!doctype html>")
-    assert "world-model-eval report" in R.to_text(rep)
+    assert "trusthorizon-worldmodel report" in R.to_text(rep)
 
 
 def test_good_model_trusted_longer_than_unstable():

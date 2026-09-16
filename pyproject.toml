@@ -3,7 +3,7 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "world-model-eval"
+name = "trusthorizon-worldmodel"
 version = "0.1.0"
 description = "Metrics and a harness to decide whether a learned simulator's rollout can be trusted, and for how many steps."
 readme = "README.md"

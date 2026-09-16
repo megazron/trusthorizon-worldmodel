@@ -13,7 +13,7 @@ def to_json(rep) -> str:
 
 def to_text(rep) -> str:
     s = rep.summary()
-    out = ["world-model-eval report",
+    out = ["trusthorizon-worldmodel report",
            "  tolerance          %.4g" % rep.tol,
            "  scenarios          %d" % s["n_scenarios"],
            "  trust horizon      median %.0f steps  (min %d, max %d)"
@@ -59,7 +59,7 @@ def to_html(rep) -> str:
 
 _HTML = """<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>world-model-eval report</title><style>
+<title>trusthorizon-worldmodel report</title><style>
 body{font-family:'Segoe UI',Helvetica,Arial,sans-serif;color:#1f2933;background:#fff;
 margin:0;padding:2rem 1rem;line-height:1.5}main{max-width:820px;margin:0 auto}
 h1{margin:0 0 .2rem}.sub{color:#6b7580;margin:0 0 1.2rem}
@@ -69,7 +69,7 @@ th{color:#0b7285}
 @media(prefers-color-scheme:dark){body{background:#0d1420;color:#e6eaee}
 th,td{border-color:#2b3440}}
 </style></head><body><main>
-<h1>world-model-eval report</h1>
+<h1>trusthorizon-worldmodel report</h1>
 <p class="sub">tolerance {{TOL}} · {{N}} scenarios · median trust horizon {{MED}} steps · {{PLAUS}}% plausibility pass</p>
 <table><tr><th>scenario</th><th>trust H</th><th>final err</th><th>growth</th>
 <th>plausibility</th><th>calib gap</th></tr>
