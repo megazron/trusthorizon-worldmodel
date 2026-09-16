@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "world-model-eval"
+version = "0.1.0"
+description = "Metrics and a harness to decide whether a learned simulator's rollout can be trusted, and for how many steps."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Gaus Mohiuddin Sayyad"}]
+dependencies = ["numpy>=1.21"]
+
+[project.scripts]
+wmeval = "world_model_eval.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
