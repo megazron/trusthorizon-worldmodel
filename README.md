@@ -2,7 +2,7 @@
 
 ![demo](docs/img/demo.gif)
 
-*RViz simulation (Kinova Gen3). Before vs after.*
+*Four test scenarios in RViz (Kinova Gen3).*
 
 **Can I trust this rollout, and for how many steps?** Metrics and a harness that answer that for a learned simulator, before you plan through it.
 
