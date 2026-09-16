@@ -4,7 +4,6 @@
 
 *RViz simulation (Kinova Gen3). Before vs after.*
 
-
 **Can I trust this rollout, and for how many steps?** Metrics and a harness that answer that for a learned simulator, before you plan through it.
 
 Learned world models are now used as reinforcement-learning environments and even co-evolve with the policies they train. A May 2026 world-model survey and the MuJoCo Playground writeup both say the same thing: the open problem is no longer building these simulators, it is knowing *when to trust a rollout*. Fidelity, long-horizon consistency, and trustworthy use as a sim-to-real bridge remain unsolved, and contact-rich humanoid tasks are where the gap is widest.
@@ -95,10 +94,6 @@ Implement a `WorldModel` with `reset(state)` and `step(action) -> next_state` (o
 ## Reading the report
 
 `report.to_text`, `to_json`, and a self-contained `to_html` give per-scenario trust horizons, growth classification, plausibility pass rate and calibration, plus an aggregate summary.
-
-## Origin
-
-Built alongside a set of engineering toolkits extracted from an MSc project, "Multimodal control of a wearable dual-arm robotic system for assisted object manipulation" (Imperial College London, 2026): <https://github.com/megazron/Multimodal-control-of-a-wearable-dual-arm-robotic-system-for-assisted-object-manipulation>. The rule that a number from a simulator is not evidence until the simulator has been checked against ground truth comes straight from that project. See the siblings [shortstop-sim2real](https://github.com/megazron/shortstop-sim2real) and [cleanbench-eval](https://github.com/megazron/cleanbench-eval).
 
 ## Limitations
 
