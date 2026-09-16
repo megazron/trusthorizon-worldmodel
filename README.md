@@ -1,5 +1,10 @@
 # TrustHorizon
 
+![demo](docs/img/demo.gif)
+
+*RViz simulation (Kinova Gen3). Before vs after.*
+
+
 **Can I trust this rollout, and for how many steps?** Metrics and a harness that answer that for a learned simulator, before you plan through it.
 
 Learned world models are now used as reinforcement-learning environments and even co-evolve with the policies they train. A May 2026 world-model survey and the MuJoCo Playground writeup both say the same thing: the open problem is no longer building these simulators, it is knowing *when to trust a rollout*. Fidelity, long-horizon consistency, and trustworthy use as a sim-to-real bridge remain unsolved, and contact-rich humanoid tasks are where the gap is widest.
